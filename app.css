@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Prosto One', cursive;
+
+}
+
+.logo img{
+    width: 70px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-item ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+   justify-content: end;
+   line-height: 1.4;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (width <= 600px ){
+    .content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+
+}
+
+
+
+.main-image{
+    width: 100%;
+}
+
+.about-one{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.store-cards{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 15px;
+}
+
+@media (width <= 600px ){
+    .store-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+.first-card, .sec-card{
+    border: 2px solid rgb(136, 136, 136);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+
+.main-content{
+   display: flex;
+    padding: 20px;
+    gap: 3px;
+    align-items: center;
+ justify-content: center;
+}
+
+
+
+@media (width <= 999px ){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.main-content img{
+    max-width: 600px;
+    height: 500px;
+    
+}
+
+.side-img{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.side-messages{ 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.oval-text{
+    position: absolute;
+    width: 100%;
+   background: rgba(0, 0, 0, 0.549);
+   padding: 10px;
+   line-height: 1.4;
+   transition: ease-in;
+   word-wrap: break-word;
+   white-space: pre-wrap;
+   text-align: left;
+}
+
+
+
+li a:hover{
+    transition: all;
+    transition-duration: .30s;
+    color: rgb(189, 188, 188);
+    border-bottom: 1px solid red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.appointment{
+    height: 300px;
+}
+
+
+.review-box{
+
+    color: black;
+    padding: 30px;
+}
+
+
+.review{
+    font-size: medium;
+    background: rgb(222, 222, 222);
+    gap: 10px;
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 0px auto;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.review-icon{
+    height: 80px;
+}
+
+.veiw-more{
+    color: red;
+    text-decoration: underline;
+    font-size: small;
+}
+
+
+.footer{
+ display: grid;
+ grid-template-columns: 1.5fr 2fr 1fr;
+ background: whitesmoke;
+ color: black;
+ border-radius: 5px;
+}
+
+@media (width <= 699px ){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.address a{
+   color: #000;
+    
+}
+
+
+.hour{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: blue;
+}
